@@ -4,7 +4,7 @@ const  validateEmail = email => {
     return re.test(String(email).toLowerCase());
 }
 
-const Index = (username, password, setUserNameError, setPasswordError, setLoginStatus) => {
+const validateForm = (username, password, setUserNameError, setPasswordError, setLoginStatus) => {
     let isValid = true
     if (!username) {
         setUserNameError('username fields Required')
@@ -27,4 +27,4 @@ const Index = (username, password, setUserNameError, setPasswordError, setLoginS
     }
 }
 
-export default Index
+export default validateForm
